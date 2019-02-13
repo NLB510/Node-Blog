@@ -7,6 +7,7 @@ module.exports = {
   insert,
   update,
   remove,
+  removeUserPosts
 };
 
 function get() {
@@ -44,4 +45,11 @@ function remove(id) {
   return db('users')
     .where('id', id)
     .del();
+}
+
+
+function removeUserPosts(id) {
+  return db('posts')
+  .where('user_id', id)
+  .del()
 }
