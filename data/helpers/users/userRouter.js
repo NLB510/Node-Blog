@@ -8,7 +8,7 @@ const router = express.Router();
 router.use(express.json());
 router.use(cors());
 
-
+// Middleware
 function upperCaseName(req, res, next) {
   if (!req.body.name) {
     res.status(400).json({
