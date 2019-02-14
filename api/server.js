@@ -1,7 +1,7 @@
 const express = require('express');
 
-const postRouter = require('./data/helpers/posts/postRouter');
-const userRouter = require('./data/helpers/users/userRouter');
+const postRouter = require('../data/helpers/posts/postRouter');
+const userRouter = require('../data/helpers/users/userRouter');
 
 const server = express();
 
